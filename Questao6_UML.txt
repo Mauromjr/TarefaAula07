@@ -28,7 +28,7 @@ Funcionario ◆---------------- Dependente
 Funcionario
 -------------------------
 - nome: String
-- dependentes: List<Dependente>
+- dependentes: Dependente
 -------------------------
 + getNome(): String
 + setNome(String): void
