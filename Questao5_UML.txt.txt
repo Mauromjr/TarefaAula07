@@ -1,0 +1,24 @@
+Professor
+-----------------------------------------
+- nome: String
+- matricula: int
+- fone: int
+- dataContratacao: date
+- disciplinas: list(Disciplina)
+-----------------------------------------
++ adicionarDisciplina(Disciplina): void
++ removerDisciplina(Disciplina): void
+
+
+Professor ---------------- Disciplina
+
+
+Disciplina
+-----------------------------------------
+- nome: String
+- horas: int
+- curso: Curso
+- alunos: list(Aluno)
+-----------------------------------------
++ lançarFalta(): void
++ reprovarAluno(Aluno): void

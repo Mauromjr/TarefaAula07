@@ -1,0 +1,43 @@
+AGREGAÇÃO
+
+Carro ◇---------------- Motor
+
+Carro
+-------------------------
+- modelo: String
+- motor: Motor
+-------------------------
++ getModelo(): String
++ setModelo(String): void
++ getMotor(): Motor
++ setMotor(Motor): void
+
+
+Motor
+-------------------------
+- potencia: int
+-------------------------
++ getPotencia(): int
++ setPotencia(int): void
+
+
+COMPOSIÇÃO
+
+Funcionario ◆---------------- Dependente
+
+Funcionario
+-------------------------
+- nome: String
+- dependentes: List<Dependente>
+-------------------------
++ getNome(): String
++ setNome(String): void
++ adicionarDependente(String): void
+
+
+Dependente
+-------------------------
+- nome: String
+-------------------------
++ getNome(): String
++ setNome(String): void
