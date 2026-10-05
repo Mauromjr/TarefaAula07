@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class PerfectAndroid {
 
     private String nome;
-    private List<Android> androides = new ArrayList<>();
+    private Android[] androides = new Android[2];
+    private int quantidade = 0;
 
     public String getNome() {
         return nome;
@@ -14,11 +12,12 @@ public class PerfectAndroid {
         this.nome = nome;
     }
 
-    public List<Android> getAndroides() {
+    public Android[] getAndroides() {
         return androides;
     }
 
     public void absorverAndroid(Android android) {
-        androides.add(android);
+        androides[quantidade] = android;
+        quantidade++;
     }
 }
