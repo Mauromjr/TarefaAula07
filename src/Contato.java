@@ -8,6 +8,8 @@ public class Contato {
     }
 
     public void setNome(String nome) {
+        // O this.nome representa o atributo do objeto e nome representa o parâmetro recebido.
+        // O this é necessário para diferenciar os dois quando possuem o mesmo nome.
         this.nome = nome;
     }
 
@@ -16,6 +18,8 @@ public class Contato {
     }
 
     public void setTelefone(String telefone) {
+        // O this.telefone representa o atributo do objeto e telefone representa o parâmetro recebido.
+        // O this é necessário para diferenciar os dois quando possuem o mesmo nome.
         this.telefone = telefone;
     }
 
