@@ -1,10 +1,7 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Funcionario {
 
     private String nome;
-    private List<Dependente> dependentes = new ArrayList<>();
+    private Dependente dependente;
 
     public String getNome() {
         return nome;
@@ -14,7 +11,11 @@ public class Funcionario {
         this.nome = nome;
     }
 
+    public Dependente getDependente() {
+        return dependente;
+    }
+
     public void adicionarDependente(String nome) {
-        dependentes.add(new Dependente(nome));
+        dependente = new Dependente(nome);
     }
 }
